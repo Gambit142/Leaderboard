@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="main.js"></script></head>
-<body>
-    <h1>Hello webpack!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <main>
+      <h1 class="header">Leaderboard</h1>
+      <section>
+        <div>
+          <div class="scores-header-div">
+            <h2>Recent Scores</h2>
+            <button type="button">Refresh</button>
+          </div>
+          <div class="scoreboard">
+            <div>Peter Parker: 100</div>
+            <div>Bruce Wayne: 20</div>
+            <div>Clark Kent: 200</div>
+            <div>Tony Stark: 130</div>
+            <div>Steve Roger: 130</div>
+            <div>Diana Prince: 150</div>
+            <div>Jean Grey: 160</div>
+          </div>
+        </div>
+          <div>
+            <form id="awesome-forms" action="#">
+              <h2>Add Your Score</h2>
+              <div class="form-container">
+                <div>
+                  <label for="title"></label>
+                  <input type="text" id="title" name="title" placeholder="Your Name">
+                </div>
+                <div>
+                  <label for="author"></label>
+                  <input type="text" id="author" name="author" placeholder="Your Score">
+                </div>
+                <button type="submit" class="add-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin: 2.5rem 0 4rem 5rem;
+}
+
+.
