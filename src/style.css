@@ -1,9 +1,9 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 .header {
@@ -38,15 +38,15 @@
   border: 1px solid #000;
 }
 
-.players-div:nth-child(even) {
-  background-color: #ccc;
-}
-
 .players-div {
   display: flex;
   justify-content: space-between;
   padding: 0.825rem 0.625rem;
   font-weight: bold;
+}
+
+.players-div:nth-child(even) {
+  background-color: #ccc;
 }
 
 .players-score {
