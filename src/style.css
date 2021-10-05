@@ -8,7 +8,47 @@
 
 .header {
   font-size: 2.5rem;
-  margin: 2.5rem 0 4rem 5rem;
+  margin: 2.5rem 0 2.5rem 0;
+  text-align: center;
 }
 
-.
+.scores-container {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.scores-header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.refresh-button {
+  padding: 0 0.25rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 5px 3px #000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  height: 1.75rem;
+}
+
+.scoreboard {
+  border: 1px solid #000;
+}
+
+.players-div:nth-child(even) {
+  background-color: #ccc;
+}
+
+.players-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.825rem 0.625rem;
+  font-weight: bold;
+}
+
+.players-score {
+  text-align: start;
+}
