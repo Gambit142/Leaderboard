@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="header">Leaderboard</h1>
+      <section class="general-container">
+        <div class="scores-container">
+          <div class="scores-header-div">
+            <h2>Recent Scores</h2>
+            <button type="button" class="refresh-button">Refresh</button>
+          </div>
+          <div class="scoreboard">
+            <div class="players-div">
+              <p>Peter Parker</p>
+              <p class="players-score">100</p>
+            </div>
+            <div class="players-div">
+              <p>Bruce Wayne</p>
+              <p class="players-score">80</p>
+            </div>
+            <div class="players-div">
+              <p>Clark Kent</p>
+              <p class="players-score">200</p>
+            </div>
+            <div class="players-div">
+              <p>Tony Stark</p>
+              <p class="players-score">130</p>
+            </div>
+            <div class="players-div">
+              <p>Steve Rogers</p>
+              <p class="players-score">130</p>
+            </div>
+            <div class="players-div">
+              <p>Diana Princess</p>
+              <p class="players-score">150</p>
+            </div>
+            <div class="players-div">
+              <p>Jean Grey</p>
+              <p class="players-score">160</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form id="leaderboard-forms" action="#">
+            <h2>Add Your Score</h2>
+            <div class="form-container">
+              <div>
+                <label for="name"></label>
+                <input type="text" id="name" name="title" placeholder="Your Name">
+              </div>
+              <div>
+                <label for="score"></label>
+                <input type="text" id="score" name="author" placeholder="Your Score">
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
