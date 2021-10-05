@@ -5,7 +5,7 @@
 
 > |Mobile Version|Desktop Version
 > |--------------|--------------|
-> |![screenshot](Leaderboard-mobile.png).|![screenshot2](LeaderBoard-desktop.png)| 
+> |![screenshot](Leaderboard-mobile.png).|![screenshot2](Leaderboard-desktop.png)| 
 
 
 
