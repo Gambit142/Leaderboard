@@ -24,7 +24,6 @@ export const createUserAndScore = async (userName, scores) => {
         },
     });
     const gameData = await response.json();
-    console.log(gameData);
     return gameData;
 }
 
@@ -42,7 +41,6 @@ const createScoreboardHtml = (array, container) => {
 export const fetchFromApi = async (container) => {
   const response = await fetch(UserInputUrl);
   const gameData = await response.json();
-  console.log(gameData);
   const scoreBoardArray = gameData.result.sort((a, b) => (b.score > a.score ? 1 : -1));
   createScoreboardHtml(scoreBoardArray, container);
 }
