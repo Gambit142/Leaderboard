@@ -2,20 +2,19 @@ const UserInputUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net
 const gameNameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 
-// const createGameName = async () => {
-//   const gameName = 'Superheroes Rescue';
-//   const response = await fetch(gameNameUrl, {
-//     method: 'POST',
-//     body: JSON.stringify({"name": gameName}),
-//       headers: {
-//         'Content-type': 'application/json; charset=UTF-8',
-//       },
-//   });
-//   const gameData = await response.json();
-//   console.log(gameData);
-//   return gameData;
-// }
-// createGameName();
+const createGameName = async () => {
+  const gameName = 'Superheroes Rescue';
+  const response = await fetch(gameNameUrl, {
+    method: 'POST',
+    body: JSON.stringify({"name": gameName}),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+  });
+  const gameData = await response.json();
+  return gameData;
+}
+
 export const createUserAndScore = async (userName, scores) => {
     const response = await fetch(UserInputUrl, {
       method: 'POST',
