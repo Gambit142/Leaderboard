@@ -46,5 +46,6 @@ export const fetchFromApi = async (container) => {
   const scoreBoardArray = gameData.result.sort((a, b) => (b.score > a.score ? 1 : -1));
   createScoreboardHtml(scoreBoardArray, container);
 }
+
 fetchFromApi(document.querySelector('.scoreboard'));
 
