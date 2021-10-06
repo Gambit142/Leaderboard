@@ -14,6 +14,8 @@ const createGameName = async () => {
   return gameData;
 };
 
+createGameName();
+
 export const createUserAndScore = async (userName, scores) => {
   const response = await fetch(UserInputUrl, {
     method: 'POST',
