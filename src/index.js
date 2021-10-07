@@ -10,6 +10,8 @@ const scoreBoardContainer = document.querySelector('.scoreboard');
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   createUserAndScore(nameInput.value, scoreInput.value);
+  nameInput.value = '';
+  scoreInput.value = '';
 });
 
 refreshButton.addEventListener('click', () => {
