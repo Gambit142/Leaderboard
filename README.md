@@ -19,7 +19,7 @@
 ## Prerequisites
 Basic understanding of HTML, JavaScript, CSS Git and GitHub
 
-[Live Demo Link](https://benmukebo.github.io/Awesome-Books/)
+[Live Demo Link](https://gambit142.github.io/Leaderboard/)
 
 ## Getting Started
 

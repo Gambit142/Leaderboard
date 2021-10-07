@@ -4,43 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
   <body>
     <main>
       <h1 class="header">Leaderboard</h1>
-      <section>
-        <div>
+      <section class="general-container">
+        <div class="scores-container">
           <div class="scores-header-div">
             <h2>Recent Scores</h2>
-            <button type="button">Refresh</button>
+            <button type="button" class="refresh-button">Refresh</button>
           </div>
           <div class="scoreboard">
-            <div>Peter Parker: 100</div>
-            <div>Bruce Wayne: 20</div>
-            <div>Clark Kent: 200</div>
-            <div>Tony Stark: 130</div>
-            <div>Steve Roger: 130</div>
-            <div>Diana Prince: 150</div>
-            <div>Jean Grey: 160</div>
           </div>
         </div>
-          <div>
-            <form id="awesome-forms" action="#">
-              <h2>Add Your Score</h2>
-              <div class="form-container">
-                <div>
-                  <label for="title"></label>
-                  <input type="text" id="title" name="title" placeholder="Your Name">
-                </div>
-                <div>
-                  <label for="author"></label>
-                  <input type="text" id="author" name="author" placeholder="Your Score">
-                </div>
-                <button type="submit" class="add-btn">Submit</button>
+        <div>
+          <form id="leaderboard-forms" action="#">
+            <h2>Add Your Score</h2>
+            <div class="form-container">
+              <div>
+                <label for="name"></label>
+                <input type="text" id="name" name="title" placeholder="Your Name">
               </div>
-            </form>
-          </div>
+              <div>
+                <label for="score"></label>
+                <input type="text" id="score" name="author" placeholder="Your Score">
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
   </body>
