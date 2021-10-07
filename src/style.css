@@ -2,12 +2,59 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
 
+body {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  font-family: 'Pacifico', sans-serif;
+
+}
+
+body::before {
+  content: "";
+  background-image: url('../4152.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  bottom: -15px;
+  left: 0px;
+  opacity: 0.9;
+}
+
+main {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #06206a; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00081c; 
+}
+
 .header {
-  font-size: 2.5rem;
+  font-family: 'Italianno', sans-serif;
+  font-size: 5rem;
+  color: #f5f0e1;
   margin: 2.5rem 0 2.5rem 0;
   text-align: center;
 }
@@ -25,17 +72,32 @@
   margin-bottom: 1.5rem;
 }
 
+.scores-header-div h2 {
+  font-size: 2rem;
+  color: #ffc13b;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .refresh-button {
   padding: 0 0.25rem;
-  border: 2px solid #000;
-  box-shadow: 2px 2px 5px 3px #000;
-  font-size: 0.9rem;
+  border: 2px solid #f5f0e1;  
+  background-color: #f5f0e1;
+  color: #bf3f14;
+  box-shadow: 2px 2px 5px 3px #f5f0e1;
+  font-size: 1.3rem;
   font-weight: bold;
+  font-family: 'Italianno', sans-serif;
+  ;
   height: 1.75rem;
 }
 
 .scoreboard {
   border: 1px solid #000;
+  height : 60%;
+  overflow-y: scroll;
+  font-family: 'Italianno', sans-serif;
+  color: #bf3f14;
+  font-size: 2rem;
 }
 
 .players-div {
@@ -46,7 +108,8 @@
 }
 
 .players-div:nth-child(even) {
-  background-color: #ccc;
+  background-color: #f5f0e1;
+  color: #441201;
 }
 
 .players-score {
@@ -93,8 +156,44 @@ input {
 }
 
 @media only screen and (min-width: 768px) {
+  /* body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+  } */
+
+  body { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body::before {
+    content: "";
+    background-image: url('../4152.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+  }
+
+  main {
+    position: relative;
+  }
+
   .header {
-    text-align: start;
+    text-align: center;
     margin-left: 2rem;
   }
 
