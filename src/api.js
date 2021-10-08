@@ -1,4 +1,4 @@
-const UserInputUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/6EmebEW7wM2xYh8nSnXs/scores/';
+const UserInputUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hpeHQljgCWirAeM2m74O/scores/';
 const gameNameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 const createGameName = async () => {
@@ -11,6 +11,7 @@ const createGameName = async () => {
     },
   });
   const gameData = await response.json();
+  console.log(gameData);
   return gameData;
 };
 
