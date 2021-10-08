@@ -1,4 +1,4 @@
-const UserInputUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/z7JM1rmeo6NjLkeyvLYM/scores/';
+const UserInputUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hpeHQljgCWirAeM2m74O/scores/';
 const gameNameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 const createGameName = async () => {
@@ -42,7 +42,7 @@ const createScoreboardHtml = (array, container) => {
 export const fetchFromApi = async (container) => {
   const response = await fetch(UserInputUrl);
   const gameData = await response.json();
-  const scoreBoardArray = gameData.result.sort((a, b) => (b.score > a.score ? 1 : -1));
+  const scoreBoardArray = gameData.result.sort((a, b) => (b.score - a.score));
   createScoreboardHtml(scoreBoardArray, container);
 };
 
