@@ -8,7 +8,6 @@
 body {
   position: relative;
   width: 100%; 
-  height: 100vh;
   font-family: 'Pacifico', sans-serif;
 
 }
@@ -36,19 +35,20 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px #000;
+  border: 1px solid #000;
   border-radius: 10px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #06206a; 
+  background: #441201; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00081c; 
+  background: #180600; 
 }
 
 .header {
@@ -75,25 +75,26 @@ main {
 .scores-header-div h2 {
   font-size: 2rem;
   color: #ffc13b;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', sans-serif;
 }
 
 .refresh-button {
   padding: 0 0.25rem;
-  border: 2px solid #f5f0e1;  
+  border: 2px solid #f5f0e1;
+  border-radius: 45%;  
   background-color: #f5f0e1;
   color: #bf3f14;
-  box-shadow: 2px 2px 5px 3px #f5f0e1;
+  box-shadow: 2px 2px 5px 15px #f5f0e1;
   font-size: 1.3rem;
   font-weight: bold;
   font-family: 'Italianno', sans-serif;
-  ;
   height: 1.75rem;
 }
 
 .scoreboard {
-  border: 1px solid #000;
-  height : 60%;
+  border: 5px solid #000;
+  border-radius: 5%;
+  height : 55%;
   overflow-y: scroll;
   font-family: 'Italianno', sans-serif;
   color: #bf3f14;
@@ -120,6 +121,7 @@ main {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
+  color: #ffc13b;
 }
 
 .form-container {
@@ -129,45 +131,52 @@ main {
 
 input {
   margin-bottom: 0.5rem;
-  border: 3px solid #000;
+  border: 3px solid #441201;
+  border-radius: 50%;
 }
 
 #name,
 #score {
   font-size: 0.95rem;
-  padding-left: 0.4rem;
-  color: #000;
+  padding: 0.5rem;
+  color: #bf3f14;
+  text-align: center;
 }
 
 #name::placeholder,
 #score::placeholder {
-  color: #000;
+  color: #bf3f14;
   font-weight: bolder;
+  font-family: 'Pacifico', sans-serif;
+  text-align: center;
 }
 
 .submit-btn {
   padding: 0 0.25rem;
-  border: 2px solid #000;
-  box-shadow: 2px 2px 5px 3px #000;
-  font-size: 0.9rem;
+  border: 2px solid #f5f0e1;
+  border-radius: 45%;  
+  background-color: #f5f0e1;
+  color: #bf3f14;
+  box-shadow: 2px 2px 5px 3px #f5f0e1;
+  font-size: 1.3rem;
   font-weight: bold;
+  font-family: 'Italianno', sans-serif;
+  height: 1.75rem;
   text-align: end;
   transform: translateX(4.38rem);
 }
 
-@media only screen and (min-width: 768px) {
-  /* body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5rem;
-  } */
+.message {
+  background-color: #f5f0e1;
+  color: #441201;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
+@media only screen and (min-width: 768px) {
   body { 
     position: relative; 
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
