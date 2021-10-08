@@ -11,7 +11,7 @@ submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   createUserAndScore(nameInput.value, scoreInput.value);
   const message = document.querySelector('.message');
-  message.innerHTML = 'Player\'\s Score added, Kindly click the Refresh Button';
+  message.innerHTML = 'Player\'s Score added, Kindly click the Refresh Button';
   message.style.padding = '0.5rem';
   nameInput.value = '';
   scoreInput.value = '';
