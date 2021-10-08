@@ -7,9 +7,8 @@
 
 body {
   position: relative;
-  width: 100%; 
+  width: 100%;
   font-family: 'Pacifico', sans-serif;
-
 }
 
 body::before {
@@ -20,9 +19,9 @@ body::before {
   background-position: center 40%;
   position: absolute;
   top: -50px;
-  right: 0px;
+  right: 0;
   bottom: -15px;
-  left: 0px;
+  left: 0;
   opacity: 0.9;
 }
 
@@ -39,16 +38,16 @@ main {
   border: 1px solid #000;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #441201; 
+  background: #441201;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #180600; 
+  background: #180600;
 }
 
 .header {
@@ -81,7 +80,7 @@ main {
 .refresh-button {
   padding: 0 0.25rem;
   border: 2px solid #f5f0e1;
-  border-radius: 45%;  
+  border-radius: 45%;
   background-color: #f5f0e1;
   color: #bf3f14;
   box-shadow: 2px 2px 5px 15px #f5f0e1;
@@ -94,7 +93,7 @@ main {
 .scoreboard {
   border: 5px solid #000;
   border-radius: 5%;
-  height : 55%;
+  height: 55%;
   overflow-y: scroll;
   font-family: 'Italianno', sans-serif;
   color: #bf3f14;
@@ -154,7 +153,7 @@ input {
 .submit-btn {
   padding: 0 0.25rem;
   border: 2px solid #f5f0e1;
-  border-radius: 45%;  
+  border-radius: 45%;
   background-color: #f5f0e1;
   color: #bf3f14;
   box-shadow: 2px 2px 5px 3px #f5f0e1;
@@ -175,8 +174,8 @@ input {
 }
 
 @media only screen and (min-width: 768px) {
-  body { 
-    position: relative; 
+  body {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -190,10 +189,10 @@ input {
     background-repeat: no-repeat;
     background-position: center 40%;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0.9;
   }
 

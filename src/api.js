@@ -11,7 +11,6 @@ const createGameName = async () => {
     },
   });
   const gameData = await response.json();
-  console.log(gameData);
   return gameData;
 };
 
@@ -43,7 +42,7 @@ const createScoreboardHtml = (array, container) => {
 export const fetchFromApi = async (container) => {
   const response = await fetch(UserInputUrl);
   const gameData = await response.json();
-  const scoreBoardArray = gameData.result.sort((a, b) => (b.score - a.score ));
+  const scoreBoardArray = gameData.result.sort((a, b) => (b.score - a.score));
   createScoreboardHtml(scoreBoardArray, container);
 };
 
